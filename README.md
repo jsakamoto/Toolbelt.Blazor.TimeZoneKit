@@ -8,6 +8,16 @@ This package provides system time zones set, and local time zone initialization,
 
 ![fig. 1](.assets/fig-1.png)
 
+### Note
+
+At this time, the version of Blazor is v.0.5.x, it doesn't contain any time zone info, and local time zone is always UTC wherever.
+
+See also: 
+
+- [Blazor Issue #663 - TimeZone issues related to Mono?](https://github.com/aspnet/Blazor/issues/663)
+- [Blazor Issue #1166 - DateTime always displays as UTC](https://github.com/aspnet/Blazor/issues/1166)
+- [Mono Issue #6368 - WebAssembly: Missing Timezone implementation](https://github.com/mono/mono/issues/6368)
+
 ## How to install and use it?
 
 **Step.1** - Install this package.
