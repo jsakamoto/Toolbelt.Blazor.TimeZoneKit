@@ -1,0 +1,20 @@
+﻿<h1>Toolbelt.Blazor.TimeZoneKit - Sample</h1>
+
+<h2>Summary</h2>
+
+<ul>
+    <li>Number of TimeZonInfo is: @TimeZoneInfo.GetSystemTimeZones().Count</li>
+    <li>TimeZoneInfo.Utc is @TimeZoneInfo.Utc</li>
+    <li>TimeZoneInfo.Local is @TimeZoneInfo.Local</li>
+    <li>DateTime.UtcNow is @DateTime.UtcNow</li>
+    <li>DateTime.Now is @DateTime.Now</li>
+</ul>
+
+<h2>All time zone list</h2>
+
+<ul>
+    @foreach (var timeZone in TimeZoneInfo.GetSystemTimeZones())
+    {
+        <li>@timeZone.Id</li>
+    }
+</ul>
