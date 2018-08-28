@@ -43,9 +43,24 @@ public class Startup
 
 That's all!
 
+## How does it work?
+
+There is no magic.
+
+This library contains all the system time zone information as a C# code.  
+(see: ["TimeZoneKit.CreateSystemTimeZones.cs"](https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/blob/master/Toolbelt.Blazor.TimeZoneKit/TimeZoneKit.CreateSystemTimeZones.cs#L16))
+
+And, this library also contains mapping information for converting IANA time zone names to .NET time zone IDs.  
+(see: ["TimeZoneKit.IANAtoTZIdMap.cs"](https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/blob/master/Toolbelt.Blazor.TimeZoneKit/TimeZoneKit.IANAtoTZIdMap.cs#L5))
+
+`UseLocalTimeZone()` extension method in this library invokes `"Intl.DateTimeFormat().resolvedOptions().timeZone"` JavaScript code to get the current time zone name (IANA name) on the web browser.
+
+`UseLocalTimeZone()` extension method also set up the system time zone set and local time zone information by accessing undocumented / non public members in `System.TimeZoneInfo` class.
+
 ### Note
 
-In my test case, this package increase the size of your Blazor browser application contents to 154KB/20KB gzip transfer.
+- **WARNING** - This library accesses private members of `System.TimeZoneInfo` using the "Reflection" .NET API, so it may break in future .NET runtime (mono.wasm) release.
+- In my test case, this package increased the size of the sample Blazor browser application content by 154 KB. (by 20KB gzip transfer.)
 
 ## License
 
