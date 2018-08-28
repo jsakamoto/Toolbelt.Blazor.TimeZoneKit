@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using static System.TimeZoneInfo;
 
 namespace Toolbelt.Blazor.TimeZoneKit
@@ -311,7 +311,7 @@ namespace Toolbelt.Blazor.TimeZoneKit
                     R(635556672000000000, 635871168000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
                     R(635872032000000000, 636187392000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
                     R(636188256000000000, 636502752000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
-                    R(636503616000000000, 636818112000000000, 36000000000, T(72000000000, 3, 4, DayOfWeek.Sunday), T(108000000000, 10, 4, DayOfWeek.Sunday), 0),
+                    R(636503616000000000, 636818112000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
                     R(636818976000000000, 3155378112000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 4, DayOfWeek.Sunday), 0),
                 }),
                 TZ("GMT Standard Time", 0, "(UTC+00:00) Dublin, Edinburgh, Lisbon, London", "GMT Standard Time", "GMT Daylight Time", new AdjustmentRule[] {
@@ -441,7 +441,7 @@ namespace Toolbelt.Blazor.TimeZoneKit
                     R(634925952000000000, 635240448000000000, 36000000000, T(36000000000, 3, 5, DayOfWeek.Friday), T(0, 1, 1, DayOfWeek.Tuesday), -36000000000),
                 }),
                 TZ("Namibia Standard Time", 72000000000, "(UTC+02:00) Windhoek", "Namibia Standard Time", "Namibia Daylight Time", new AdjustmentRule[] {
-                    R(0, 636502752000000000, 36000000000, T(0, 1, 1, DayOfWeek.Sunday), T(72000000000, 4, 1, DayOfWeek.Sunday), -36000000000),
+                    R(0, 636502752000000000, 36000000000, T(72000000000, 9, 1, DayOfWeek.Sunday), T(72000000000, 4, 1, DayOfWeek.Sunday), -36000000000),
                 }),
                 TZ("Arabic Standard Time", 108000000000, "(UTC+03:00) Baghdad", "Arabic Standard Time", "Arabic Daylight Time", new AdjustmentRule[] {
                     R(0, 632400480000000000, 36000000000, T(108000000000, 4, 1, DayOfWeek.Thursday), T(144000000000, 10, 1, DayOfWeek.Friday), 0),

@@ -1,4 +1,4 @@
-﻿namespace Toolbelt.Blazor.TimeZoneKit
+namespace Toolbelt.Blazor.TimeZoneKit
 {
     public static partial class TimeZoneKit
     {
