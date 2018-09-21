@@ -30,7 +30,7 @@ See also:
 
 ```csharp
 ...
-using Toolbelt.Blazor.TimeZoneKit;
+using Toolbelt.Blazor.Extensions.DependencyInjection;
 
 public class Startup
 {

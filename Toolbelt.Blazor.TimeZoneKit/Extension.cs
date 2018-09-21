@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Blazor.Builder;
 using Microsoft.JSInterop;
 
-namespace Toolbelt.Blazor.TimeZoneKit
+namespace Toolbelt.Blazor.Extensions.DependencyInjection
 {
     /// <summary>
     /// Provides extension methods releated with TimeZoneKit.
     /// </summary>
-    public static class Extension
+    public static class TimeZoneKitExtension
     {
         /// <summary>
         /// Set "TimeZoneInfo.Local" to actual local time zone. (include "UseSystemTimeZones()")
@@ -24,7 +24,7 @@ namespace Toolbelt.Blazor.TimeZoneKit
         public static void UseLocalTimeZone(this IBlazorApplicationBuilder app, string timeZoneId)
         {
             app.UseSystemTimeZones();
-            TimeZoneKit.SetLocalTimeZone(timeZoneId);
+            TimeZoneKit.TimeZoneKit.SetLocalTimeZone(timeZoneId);
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Toolbelt.Blazor.TimeZoneKit
         public static void UseLocalTimeZoneByIANAName(this IBlazorApplicationBuilder app, string ianaTimeZoneName)
         {
             app.UseSystemTimeZones();
-            TimeZoneKit.SetLocalTimeZoneByIANAName(ianaTimeZoneName);
+            TimeZoneKit.TimeZoneKit.SetLocalTimeZoneByIANAName(ianaTimeZoneName);
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace Toolbelt.Blazor.TimeZoneKit
         {
             if (TimeZoneInfo.GetSystemTimeZones().Count == 0)
             {
-                TimeZoneKit.SetSystemTimeZones(TimeZoneKit.CreateSystemTimeZones());
+                TimeZoneKit.TimeZoneKit.SetSystemTimeZones(TimeZoneKit.TimeZoneKit.CreateSystemTimeZones());
             }
         }
     }

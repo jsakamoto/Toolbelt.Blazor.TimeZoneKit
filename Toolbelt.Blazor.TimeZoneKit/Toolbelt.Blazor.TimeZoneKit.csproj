@@ -7,7 +7,9 @@
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Toolbelt.Blazor.TimeZoneKit.xml</DocumentationFile>
     <Authors>J.Sakamoto</Authors>
-    <PackageReleaseNotes>v.1.0.0
+    <PackageReleaseNotes>v.2.0.0
+- BREAKING CHANGE: Fix namespace of TimeZoneKitExtension class.
+v.1.0.0
 - 1st release.</PackageReleaseNotes>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
     <Copyright>opyright © 2018 J.Sakamoto, Mozilla Public License 2.0</Copyright>
@@ -15,6 +17,7 @@
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/</PackageProjectUrl>
     <Description>This package provides system time zones set, and local time zone initialization, for Blazor browser application.</Description>
     <PackageTags>blazor,timezone,timezoneinfo</PackageTags>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
