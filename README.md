@@ -1,4 +1,4 @@
-# Toolbelt.Blazor.TimeZoneKit [![NuGet Package](https://img.shields.io/nuget/v/Toolbelt.Blazor.TimeZoneKit.svg)](https://www.nuget.org/packages/Toolbelt.Blazor.TimeZoneKit/)
+# Blazor Time Zone Kit [![NuGet Package](https://img.shields.io/nuget/v/Toolbelt.Blazor.TimeZoneKit.svg)](https://www.nuget.org/packages/Toolbelt.Blazor.TimeZoneKit/)
 
 ## Summary
 
