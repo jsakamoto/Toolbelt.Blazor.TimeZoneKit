@@ -6,11 +6,11 @@ This is a class library as a NuGet package for [Blazor](https://blazor.net/) bro
 
 This package provides system time zones set, and local time zone initialization, for [Blazor](https://blazor.net/) browser application.
 
-![fig. 1](.assets/fig-1.png)
+![fig. 1](https://raw.githubusercontent.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/master/.assets/fig-1-mini.png)
 
 ### Note
 
-At this time, the version of Blazor is v.0.5.x, it doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the version of Blazor is v.0.6.0, it doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
