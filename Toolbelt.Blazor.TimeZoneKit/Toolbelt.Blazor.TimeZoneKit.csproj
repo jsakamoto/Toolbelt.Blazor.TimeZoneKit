@@ -7,7 +7,13 @@
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Toolbelt.Blazor.TimeZoneKit.xml</DocumentationFile>
     <Authors>J.Sakamoto</Authors>
-    <PackageReleaseNotes>v.2.0.0
+    <PackageReleaseNotes>v.2.1.0
+- Blazor v.0.6.0 support - it was signed strong name.
+- Update time zone information
+    - Morocco Standard Time
+    - Namibia Standard Time
+    - Fiji Standard Time
+v.2.0.0
 - BREAKING CHANGE: Fix namespace of TimeZoneKitExtension class.
 v.1.0.0
 - 1st release.</PackageReleaseNotes>
@@ -17,11 +23,11 @@ v.1.0.0
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/</PackageProjectUrl>
     <Description>This package provides system time zones set, and local time zone initialization, for Blazor browser application.</Description>
     <PackageTags>blazor,timezone,timezoneinfo</PackageTags>
-    <Version>2.0.0</Version>
+    <Version>2.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Browser" Version="0.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Browser" Version="0.6.0" />
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
