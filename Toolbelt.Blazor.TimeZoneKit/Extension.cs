@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.AspNetCore.Blazor.Builder;
+using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.JSInterop;
 
 namespace Toolbelt.Blazor.Extensions.DependencyInjection
@@ -12,7 +12,7 @@ namespace Toolbelt.Blazor.Extensions.DependencyInjection
         /// <summary>
         /// Set "TimeZoneInfo.Local" to actual local time zone. (include "UseSystemTimeZones()")
         /// </summary>
-        public static void UseLocalTimeZone(this IBlazorApplicationBuilder app)
+        public static void UseLocalTimeZone(this IComponentsApplicationBuilder app)
         {
             app.UseSystemTimeZones();
             JSRuntime.Current.InvokeAsync<string>("eval", "DotNet.invokeMethod('Toolbelt.Blazor.TimeZoneKit','InitLocalTimeZone', (function(){try { return ''+ Intl.DateTimeFormat().resolvedOptions().timeZone; } catch(e) {} return 'UTC';}()))");
@@ -21,7 +21,7 @@ namespace Toolbelt.Blazor.Extensions.DependencyInjection
         /// <summary>
         /// Set "TimeZoneInfo.Local" to the time zone that specified id. (include "UseSystemTimeZones()")
         /// </summary>
-        public static void UseLocalTimeZone(this IBlazorApplicationBuilder app, string timeZoneId)
+        public static void UseLocalTimeZone(this IComponentsApplicationBuilder app, string timeZoneId)
         {
             app.UseSystemTimeZones();
             TimeZoneKit.TimeZoneKit.SetLocalTimeZone(timeZoneId);
@@ -30,7 +30,7 @@ namespace Toolbelt.Blazor.Extensions.DependencyInjection
         /// <summary>
         /// Set "TimeZoneInfo.Local" to the time zone that specified IANA name. (include "UseSystemTimeZones()")
         /// </summary>
-        public static void UseLocalTimeZoneByIANAName(this IBlazorApplicationBuilder app, string ianaTimeZoneName)
+        public static void UseLocalTimeZoneByIANAName(this IComponentsApplicationBuilder app, string ianaTimeZoneName)
         {
             app.UseSystemTimeZones();
             TimeZoneKit.TimeZoneKit.SetLocalTimeZoneByIANAName(ianaTimeZoneName);
@@ -39,7 +39,7 @@ namespace Toolbelt.Blazor.Extensions.DependencyInjection
         /// <summary>
         /// Ensure "TimeZoneInfo.GetSystemTimeZones()"
         /// </summary>
-        public static void UseSystemTimeZones(this IBlazorApplicationBuilder app)
+        public static void UseSystemTimeZones(this IComponentsApplicationBuilder app)
         {
             if (TimeZoneInfo.GetSystemTimeZones().Count == 0)
             {
