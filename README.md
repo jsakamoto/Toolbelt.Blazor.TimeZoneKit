@@ -10,7 +10,7 @@ This package provides system time zones set, and local time zone initialization,
 
 ### Note
 
-At this time, the version of Blazor is v.0.6.0, it doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the version of Blazor is v.0.8.0 or before, those doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
@@ -35,7 +35,7 @@ using Toolbelt.Blazor.Extensions.DependencyInjection;
 public class Startup
 {
     ...
-    public void Configure(IBlazorApplicationBuilder app)
+    public void Configure(IComponentsApplicationBuilder app)
     {
         app.UseLocalTimeZone();
     ...
@@ -62,6 +62,18 @@ And, this library also contains mapping information for converting IANA time zon
 - **WARNING** - This library accesses private members of `System.TimeZoneInfo` using the "Reflection" .NET API, so it may break in future .NET runtime (mono.wasm) release.
 - In my test case, this package increased the size of the sample Blazor browser application content by 154 KB. (by 20KB gzip transfer.)
 
+## Release Note
+
+- **v.3.0.0** - BREAKING CHANGE: Support Blazor v.0.8.0 (not compatible with v.0.7.0 or before.)
+- **v.2.1.0**
+  - Blazor v.0.6.0 support - it was signed strong name.  
+  - Update time zone information
+    - Morocco Standard Time
+    - Namibia Standard Time
+    - Fiji Standard Time
+- **v.2.0.0** - BREAKING CHANGE: Fix namespace of TimeZoneKitExtension class.
+- **v.1.0.0** - 1st release.
+
 ## License
 
-[Mozilla Public License Version 2.0](LICENSE)
+[Mozilla Public License Version 2.0](https://raw.githubusercontent.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/master/LICENSE)

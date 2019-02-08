@@ -7,7 +7,9 @@
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Toolbelt.Blazor.TimeZoneKit.xml</DocumentationFile>
     <Authors>J.Sakamoto</Authors>
-    <PackageReleaseNotes>v.2.1.0
+    <PackageReleaseNotes>v.3.0.0
+- BREAKING CHANGE: Support Blazor v.0.8.0 (not compatible with v.0.7.0 or before.)
+v.2.1.0
 - Blazor v.0.6.0 support - it was signed strong name.
 - Update time zone information
     - Morocco Standard Time
@@ -18,16 +20,16 @@ v.2.0.0
 v.1.0.0
 - 1st release.</PackageReleaseNotes>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
-    <Copyright>opyright © 2018 J.Sakamoto, Mozilla Public License 2.0</Copyright>
+    <Copyright>opyright © 2018-2019 J.Sakamoto, Mozilla Public License 2.0</Copyright>
     <PackageLicenseUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/</PackageProjectUrl>
     <Description>This package provides system time zones set, and local time zone initialization, for Blazor browser application.</Description>
     <PackageTags>blazor,timezone,timezoneinfo</PackageTags>
-    <Version>2.1.0</Version>
+    <Version>3.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Browser" Version="0.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="0.8.0-preview-19104-04" />
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
