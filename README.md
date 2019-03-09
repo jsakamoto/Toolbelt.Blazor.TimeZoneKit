@@ -64,6 +64,7 @@ And, this library also contains mapping information for converting IANA time zon
 
 ## Release Note
 
+- **v.4.0.0** - BREAKING CHANGE: Support Blazor v.0.9.0 (not compatible with v.0.8.0 or before.)
 - **v.3.0.0** - BREAKING CHANGE: Support Blazor v.0.8.0 (not compatible with v.0.7.0 or before.)
 - **v.2.1.0**
   - Blazor v.0.6.0 support - it was signed strong name.  
