@@ -194,8 +194,7 @@ namespace Toolbelt.Blazor.TimeZoneKit
                     R(635872032000000000, 636187392000000000, 36000000000, T(863999990000, 8, 2, DayOfWeek.Saturday), T(863999990000, 5, 2, DayOfWeek.Saturday), 0),
                     R(636188256000000000, 636502752000000000, 36000000000, T(863999990000, 8, 2, DayOfWeek.Saturday), T(863999990000, 5, 2, DayOfWeek.Saturday), 0),
                     R(636503616000000000, 636818112000000000, 36000000000, T(863999990000, 8, 2, DayOfWeek.Saturday), T(863999990000, 5, 2, DayOfWeek.Saturday), 0),
-                    R(636818976000000000, 637133472000000000, 36000000000, T(0, 9, 2, DayOfWeek.Sunday), T(0, 4, 1, DayOfWeek.Sunday), 0),
-                    R(637134336000000000, 3155378112000000000, 36000000000, T(0, 9, 1, DayOfWeek.Sunday), T(0, 4, 1, DayOfWeek.Sunday), 0),
+                    R(636818976000000000, 3155378112000000000, 36000000000, T(863999990000, 9, 1, DayOfWeek.Saturday), T(863999990000, 4, 1, DayOfWeek.Saturday), 0),
                 }),
                 TZ("Newfoundland Standard Time", -126000000000, "(UTC-03:30) Newfoundland", "Newfoundland Standard Time", "Newfoundland Daylight Time", new AdjustmentRule[] {
                     R(0, 633031200000000000, 36000000000, T(600000000, 4, 1, DayOfWeek.Sunday), T(600000000, 10, 5, DayOfWeek.Sunday), 0),
@@ -311,6 +310,25 @@ namespace Toolbelt.Blazor.TimeZoneKit
                     R(0, 3155378112000000000, 36000000000, T(36000000000, 3, 5, DayOfWeek.Sunday), T(72000000000, 10, 5, DayOfWeek.Sunday), 0),
                 }),
                 TZ("Greenwich Standard Time", 0, "(UTC+00:00) Monrovia, Reykjavik", "Greenwich Standard Time", "Greenwich Daylight Time", null),
+                TZ("Sao Tome Standard Time", 0, "(UTC+00:00) Sao Tome", "Sao Tome Standard Time", "Sao Tome Daylight Time", new AdjustmentRule[] {
+                    R(636503616000000000, 636818112000000000, -36000000000, T(0, 1, 1, DayOfWeek.Monday), T(36000000000, 1, 1, DayOfWeek.Monday), 36000000000),
+                    R(636818976000000000, 637133472000000000, 36000000000, T(0, 1, 1, DayOfWeek.Tuesday), T(72000000000, 1, 1, DayOfWeek.Tuesday), 0),
+                }),
+                TZ("Morocco Standard Time", 0, "(UTC+01:00) Casablanca", "Morocco Standard Time", "Morocco Daylight Time", new AdjustmentRule[] {
+                    R(633347424000000000, 633662784000000000, 36000000000, T(863999990000, 5, 5, DayOfWeek.Saturday), T(863999990000, 8, 5, DayOfWeek.Sunday), 0),
+                    R(633663648000000000, 633978144000000000, 36000000000, T(863999990000, 5, 5, DayOfWeek.Sunday), T(863999990000, 8, 3, DayOfWeek.Thursday), 0),
+                    R(633979008000000000, 634293504000000000, 36000000000, T(863999990000, 5, 1, DayOfWeek.Saturday), T(863999990000, 8, 1, DayOfWeek.Saturday), 0),
+                    R(634294368000000000, 634608864000000000, 36000000000, T(863999990000, 4, 1, DayOfWeek.Saturday), T(863999990000, 7, 5, DayOfWeek.Saturday), 0),
+                    R(634609728000000000, 634925088000000000, 36000000000, T(72000000000, 4, 5, DayOfWeek.Sunday), T(108000000000, 9, 5, DayOfWeek.Sunday), 0),
+                    R(634925952000000000, 635240448000000000, 36000000000, T(72000000000, 4, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
+                    R(635241312000000000, 635555808000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
+                    R(635556672000000000, 635871168000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
+                    R(635872032000000000, 636187392000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
+                    R(636188256000000000, 636502752000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
+                    R(636503616000000000, 636818112000000000, 36000000000, T(72000000000, 6, 3, DayOfWeek.Sunday), T(108000000000, 5, 2, DayOfWeek.Sunday), 0),
+                    R(636818976000000000, 637133472000000000, 36000000000, T(72000000000, 6, 2, DayOfWeek.Sunday), T(108000000000, 5, 1, DayOfWeek.Sunday), 0),
+                    R(637134336000000000, 3155378112000000000, 36000000000, T(72000000000, 5, 4, DayOfWeek.Sunday), T(108000000000, 4, 3, DayOfWeek.Sunday), 0),
+                }),
                 TZ("W. Europe Standard Time", 36000000000, "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna", "W. Europe Standard Time", "W. Europe Daylight Time", new AdjustmentRule[] {
                     R(0, 3155378112000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
                 }),
@@ -319,24 +337,6 @@ namespace Toolbelt.Blazor.TimeZoneKit
                 }),
                 TZ("Romance Standard Time", 36000000000, "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris", "Romance Standard Time", "Romance Daylight Time", new AdjustmentRule[] {
                     R(0, 3155378112000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
-                }),
-                TZ("Morocco Standard Time", 36000000000, "(UTC+01:00) Casablanca", "Morocco Standard Time", "Morocco Daylight Time", new AdjustmentRule[] {
-                    R(0, 633346560000000000, 0, T(0, 1, 1), T(10000, 1, 1), -36000000000),
-                    R(633347424000000000, 633662784000000000, 36000000000, T(863999990000, 5, 5, DayOfWeek.Saturday), T(863999990000, 8, 5, DayOfWeek.Sunday), -36000000000),
-                    R(633663648000000000, 633978144000000000, 36000000000, T(863999990000, 5, 5, DayOfWeek.Sunday), T(863999990000, 8, 3, DayOfWeek.Thursday), -36000000000),
-                    R(633979008000000000, 634293504000000000, 36000000000, T(863999990000, 5, 1, DayOfWeek.Saturday), T(863999990000, 8, 1, DayOfWeek.Saturday), -36000000000),
-                    R(634294368000000000, 634608864000000000, 36000000000, T(863999990000, 4, 1, DayOfWeek.Saturday), T(863999990000, 7, 5, DayOfWeek.Saturday), -36000000000),
-                    R(634609728000000000, 634925088000000000, 36000000000, T(72000000000, 4, 5, DayOfWeek.Sunday), T(108000000000, 9, 5, DayOfWeek.Sunday), -36000000000),
-                    R(634925952000000000, 635240448000000000, 36000000000, T(72000000000, 4, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), -36000000000),
-                    R(635241312000000000, 635555808000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), -36000000000),
-                    R(635556672000000000, 635871168000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), -36000000000),
-                    R(635872032000000000, 636187392000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), -36000000000),
-                    R(636188256000000000, 636502752000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), -36000000000),
-                    R(636503616000000000, 636818112000000000, 36000000000, T(72000000000, 6, 3, DayOfWeek.Sunday), T(0, 1, 1, DayOfWeek.Monday), -36000000000),
-                }),
-                TZ("Sao Tome Standard Time", 36000000000, "(UTC+01:00) Sao Tome", "Sao Tome Standard Time", "Sao Tome Daylight Time", new AdjustmentRule[] {
-                    R(0, 636502752000000000, 0, T(0, 1, 1), T(10000, 1, 1), -36000000000),
-                    R(636503616000000000, 636818112000000000, -36000000000, T(0, 1, 1, DayOfWeek.Monday), T(36000000000, 1, 1, DayOfWeek.Monday), 0),
                 }),
                 TZ("Central European Standard Time", 36000000000, "(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb", "Central European Standard Time", "Central European Daylight Time", new AdjustmentRule[] {
                     R(0, 3155378112000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
@@ -551,6 +551,10 @@ namespace Toolbelt.Blazor.TimeZoneKit
                 TZ("Pakistan Standard Time", 180000000000, "(UTC+05:00) Islamabad, Karachi", "Pakistan Standard Time", "Pakistan Daylight Time", new AdjustmentRule[] {
                     R(633347424000000000, 633662784000000000, 36000000000, T(863999990000, 5, 5, DayOfWeek.Saturday), T(863999990000, 10, 5, DayOfWeek.Friday), 0),
                     R(633663648000000000, 633978144000000000, 36000000000, T(863999990000, 4, 2, DayOfWeek.Tuesday), T(863999990000, 10, 5, DayOfWeek.Saturday), 0),
+                }),
+                TZ("Qyzylorda Standard Time", 180000000000, "(UTC+05:00) Qyzylorda", "Qyzylorda Standard Time", "Qyzylorda Daylight Time", new AdjustmentRule[] {
+                    R(0, 636502752000000000, 0, T(0, 1, 1), T(10000, 1, 1), 36000000000),
+                    R(636503616000000000, 636818112000000000, 36000000000, T(0, 1, 1, DayOfWeek.Monday), T(0, 12, 3, DayOfWeek.Friday), 0),
                 }),
                 TZ("India Standard Time", 198000000000, "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi", "India Standard Time", "India Daylight Time", null),
                 TZ("Sri Lanka Standard Time", 198000000000, "(UTC+05:30) Sri Jayawardenepura", "Sri Lanka Standard Time", "Sri Lanka Daylight Time", null),
