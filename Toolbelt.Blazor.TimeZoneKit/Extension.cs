@@ -15,8 +15,12 @@ namespace Toolbelt.Blazor.Extensions.DependencyInjection
         public static void UseLocalTimeZone(this IComponentsApplicationBuilder app)
         {
             app.UseSystemTimeZones();
-            var jsRuntime = app.Services.GetService(typeof(IJSRuntime)) as IJSRuntime;
-            jsRuntime.InvokeAsync<string>("eval", "DotNet.invokeMethod('Toolbelt.Blazor.TimeZoneKit','InitLocalTimeZone', (function(){try { return ''+ Intl.DateTimeFormat().resolvedOptions().timeZone; } catch(e) {} return 'UTC';}()))");
+            var jsRuntime = app.Services.GetService(typeof(IJSRuntime)) as IJSInProcessRuntime;
+            if (jsRuntime != null)
+            {
+                var ianaTimeZoneName = jsRuntime.Invoke<string>("eval", "(function(){try { return ''+ Intl.DateTimeFormat().resolvedOptions().timeZone; } catch(e) {} return 'UTC';}())");
+                TimeZoneKit.TimeZoneKit.SetLocalTimeZoneByIANAName(ianaTimeZoneName);
+            }
         }
 
         /// <summary>

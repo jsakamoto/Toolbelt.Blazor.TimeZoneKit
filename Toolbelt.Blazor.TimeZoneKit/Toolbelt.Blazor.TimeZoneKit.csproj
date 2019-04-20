@@ -33,7 +33,7 @@ v.1.0.0
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/</PackageProjectUrl>
     <Description>This package provides system time zones set, and local time zone initialization, for Blazor (client-side) browser application.</Description>
     <PackageTags>blazor,timezone,timezoneinfo</PackageTags>
-    <Version>5.0.0.0</Version>
+    <Version>5.0.0.3</Version>
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
