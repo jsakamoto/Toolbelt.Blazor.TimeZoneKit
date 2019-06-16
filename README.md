@@ -10,7 +10,7 @@ This package provides system time zones set, and local time zone initialization,
 
 ### Note
 
-At this time, the version of Blazor is v.3.0.0 Preview 4 or before, those doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the version of Blazor is v.3.0.0 Preview 6 or before, those doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
@@ -64,6 +64,7 @@ And, this library also contains mapping information for converting IANA time zon
 
 ## Release Note
 
+- **v.5.0.1** - Update West Bank Standard Time
 - **v.5.0.0** - BREAKING CHANGE: Support Blazor v.3.0.0 Preview 4 (not compatible with v.0.9.0 or before.)
 - **v.4.0.0** - BREAKING CHANGE: Support Blazor v.0.9.0 (not compatible with v.0.8.0 or before.)
 - **v.3.0.0** - BREAKING CHANGE: Support Blazor v.0.8.0 (not compatible with v.0.7.0 or before.)
