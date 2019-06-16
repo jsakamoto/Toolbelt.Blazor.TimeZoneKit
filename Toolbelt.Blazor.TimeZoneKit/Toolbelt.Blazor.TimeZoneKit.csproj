@@ -11,7 +11,9 @@
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Toolbelt.Blazor.TimeZoneKit.xml</DocumentationFile>
     <Authors>J.Sakamoto</Authors>
-    <PackageReleaseNotes>v.5.0.0
+    <PackageReleaseNotes>v.5.0.1
+- Update West Bank Standard Time
+v.5.0.0
 - BREAKING CHANGE: Support Blazor v.3.0.0 Preview 4 (not compatible with v.0.9.0 or before.)
 v.4.0.0
 - BREAKING CHANGE: Support Blazor v.0.9.0 (not compatible with v.0.8.0 or before.)
@@ -33,7 +35,7 @@ v.1.0.0
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/</PackageProjectUrl>
     <Description>This package provides system time zones set, and local time zone initialization, for Blazor (client-side) browser application.</Description>
     <PackageTags>blazor,timezone,timezoneinfo</PackageTags>
-    <Version>5.0.0.3</Version>
+    <Version>5.0.1</Version>
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
   </PropertyGroup>
 

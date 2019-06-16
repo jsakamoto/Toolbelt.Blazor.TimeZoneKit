@@ -404,7 +404,9 @@ namespace Toolbelt.Blazor.TimeZoneKit
                     R(635556672000000000, 635871168000000000, 36000000000, T(863999990000, 3, 5, DayOfWeek.Friday), T(863999990000, 10, 4, DayOfWeek.Thursday), 0),
                     R(635872032000000000, 636187392000000000, 36000000000, T(36000000000, 3, 5, DayOfWeek.Saturday), T(36000000000, 10, 5, DayOfWeek.Saturday), 0),
                     R(636188256000000000, 636502752000000000, 36000000000, T(36000000000, 3, 5, DayOfWeek.Saturday), T(36000000000, 10, 5, DayOfWeek.Saturday), 0),
-                    R(636503616000000000, 3155378112000000000, 36000000000, T(36000000000, 3, 4, DayOfWeek.Saturday), T(36000000000, 10, 5, DayOfWeek.Saturday), 0),
+                    R(636503616000000000, 636818112000000000, 36000000000, T(36000000000, 3, 4, DayOfWeek.Saturday), T(36000000000, 10, 5, DayOfWeek.Saturday), 0),
+                    R(636818976000000000, 637133472000000000, 36000000000, T(0, 3, 5, DayOfWeek.Friday), T(36000000000, 10, 4, DayOfWeek.Saturday), 0),
+                    R(637134336000000000, 3155378112000000000, 36000000000, T(0, 3, 4, DayOfWeek.Friday), T(36000000000, 10, 5, DayOfWeek.Saturday), 0),
                 }),
                 TZ("South Africa Standard Time", 72000000000, "(UTC+02:00) Harare, Pretoria", "South Africa Standard Time", "South Africa Daylight Time", null),
                 TZ("FLE Standard Time", 72000000000, "(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius", "FLE Standard Time", "FLE Daylight Time", new AdjustmentRule[] {
