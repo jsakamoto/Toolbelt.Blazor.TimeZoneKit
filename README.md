@@ -10,7 +10,7 @@ This package provides system time zones set, and local time zone initialization,
 
 ### Note
 
-At this time, the version of Blazor is v.3.0.0 Preview 6 or before, those doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the version of Blazor is v.3.0.0 Preview 7 or before, those doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
