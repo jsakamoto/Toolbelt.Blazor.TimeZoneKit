@@ -68,6 +68,9 @@ And, this library also contains mapping information for converting IANA time zon
 
 ## Release Note
 
+- **v.5.0.2**
+    - Update Central Brazilian Standard Time
+    - Update E. South America Standard Time
 - **v.5.0.1** - Update West Bank Standard Time
 - **v.5.0.0** - BREAKING CHANGE: Support Blazor v.3.0.0 Preview 4 (not compatible with v.0.9.0 or before.)
 - **v.4.0.0** - BREAKING CHANGE: Support Blazor v.0.9.0 (not compatible with v.0.8.0 or before.)
