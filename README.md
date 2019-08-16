@@ -1,22 +1,26 @@
-# Blazor (client-side) Time Zone Kit [![NuGet Package](https://img.shields.io/nuget/v/Toolbelt.Blazor.TimeZoneKit.svg)](https://www.nuget.org/packages/Toolbelt.Blazor.TimeZoneKit/)
+# Blazor WebAssembly App (client-side) Time Zone Kit [![NuGet Package](https://img.shields.io/nuget/v/Toolbelt.Blazor.TimeZoneKit.svg)](https://www.nuget.org/packages/Toolbelt.Blazor.TimeZoneKit/)
 
 ## Summary
 
-This is a class library as a NuGet package for [Blazor (client-side)](https://blazor.net/) browser application.
+This is a class library as a NuGet package for [Blazor WebAssembly (client-side)](https://blazor.net/) browser application.
 
-This package provides system time zones set, and local time zone initialization, for [Blazor (client-side)](https://blazor.net/) browser application.
+This package provides system time zones set, and local time zone initialization, for [Blazor WebAssembly (client-side)](https://blazor.net/) browser application.
 
 ![fig. 1](https://raw.githubusercontent.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/master/.assets/fig-1-mini.png)
 
 ### Note
 
-At this time, the version of Blazor is v.3.0.0 Preview 7 or before, those doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the version of Blazor is v.3.0.0 Preview 8 or before, those doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
 - [Blazor Issue #663 - TimeZone issues related to Mono?](https://github.com/aspnet/Blazor/issues/663)
 - [Blazor Issue #1166 - DateTime always displays as UTC](https://github.com/aspnet/Blazor/issues/1166)
 - [Mono Issue #6368 - WebAssembly: Missing Timezone implementation](https://github.com/mono/mono/issues/6368)
+
+## Supported Blazor versions
+
+"Blazor WebAssembly App (client-side) Time Zone Kit" ver.5.x supports  Blazor WebAssembly App versions **from ver.3.0.0-prevew 4 to preview 8.**
 
 ## How to install and use it?
 
