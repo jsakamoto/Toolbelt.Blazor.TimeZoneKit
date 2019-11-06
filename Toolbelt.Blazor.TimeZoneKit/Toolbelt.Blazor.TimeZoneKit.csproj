@@ -11,7 +11,9 @@
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Toolbelt.Blazor.TimeZoneKit.xml</DocumentationFile>
     <Authors>J.Sakamoto</Authors>
-    <PackageReleaseNotes>v.5.0.2
+    <PackageReleaseNotes>v.5.0.3
+- Update Morocco, Norfolk, Fiji Standard Time
+v.5.0.2
 - Update Central Brazilian Standard Time
 - Update E. South America Standard Time
 v.5.0.1
@@ -38,7 +40,7 @@ v.1.0.0
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/</PackageProjectUrl>
     <Description>This package provides system time zones set, and local time zone initialization, for Blazor (client-side) browser application.</Description>
     <PackageTags>blazor,timezone,timezoneinfo</PackageTags>
-    <Version>5.0.2</Version>
+    <Version>5.0.3</Version>
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
   </PropertyGroup>
 

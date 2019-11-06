@@ -283,8 +283,8 @@ namespace Toolbelt.Blazor.TimeZoneKit
                     R(635556672000000000, 635871168000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
                     R(635872032000000000, 636187392000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
                     R(636188256000000000, 636502752000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
-                    R(636503616000000000, 636818112000000000, 36000000000, T(72000000000, 6, 3, DayOfWeek.Sunday), T(108000000000, 5, 2, DayOfWeek.Sunday), 0),
-                    R(636818976000000000, 637133472000000000, 36000000000, T(72000000000, 6, 2, DayOfWeek.Sunday), T(108000000000, 5, 1, DayOfWeek.Sunday), 0),
+                    R(636503616000000000, 636818112000000000, 36000000000, T(72000000000, 3, 4, DayOfWeek.Sunday), T(108000000000, 10, 4, DayOfWeek.Sunday), 0),
+                    R(636818976000000000, 637133472000000000, 36000000000, T(72000000000, 6, 2, DayOfWeek.Sunday), T(0, 1, 1, DayOfWeek.Tuesday), 0),
                     R(637134336000000000, 3155378112000000000, 36000000000, T(72000000000, 5, 4, DayOfWeek.Sunday), T(108000000000, 4, 3, DayOfWeek.Sunday), 0),
                 }),
                 TZ("W. Europe Standard Time", 36000000000, "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna", "W. Europe Standard Time", "W. Europe Daylight Time", new AdjustmentRule[] {
@@ -661,6 +661,8 @@ namespace Toolbelt.Blazor.TimeZoneKit
                 TZ("Norfolk Standard Time", 396000000000, "(UTC+11:00) Norfolk Island", "Norfolk Standard Time", "Norfolk Daylight Time", new AdjustmentRule[] {
                     R(0, 635555808000000000, 0, T(0, 1, 1), T(10000, 1, 1), 18000000000),
                     R(635556672000000000, 635871168000000000, 18000000000, T(0, 1, 1, DayOfWeek.Thursday), T(72000000000, 10, 1, DayOfWeek.Sunday), 0),
+                    R(636818976000000000, 637133472000000000, 36000000000, T(72000000000, 10, 1, DayOfWeek.Sunday), T(0, 1, 1, DayOfWeek.Tuesday), 0),
+                    R(637134336000000000, 3155378112000000000, 36000000000, T(72000000000, 10, 1, DayOfWeek.Sunday), T(108000000000, 4, 1, DayOfWeek.Sunday), 0),
                 }),
                 TZ("Sakhalin Standard Time", 396000000000, "(UTC+11:00) Sakhalin", "Sakhalin Standard Time", "Sakhalin Daylight Time", new AdjustmentRule[] {
                     R(0, 634293504000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), -36000000000),
@@ -692,8 +694,8 @@ namespace Toolbelt.Blazor.TimeZoneKit
                     R(635872032000000000, 636187392000000000, 36000000000, T(72000000000, 11, 1, DayOfWeek.Sunday), T(108000000000, 1, 3, DayOfWeek.Sunday), 0),
                     R(636188256000000000, 636502752000000000, 36000000000, T(72000000000, 11, 1, DayOfWeek.Sunday), T(108000000000, 1, 3, DayOfWeek.Sunday), 0),
                     R(636503616000000000, 636818112000000000, 36000000000, T(72000000000, 11, 1, DayOfWeek.Sunday), T(108000000000, 1, 2, DayOfWeek.Sunday), 0),
-                    R(636818976000000000, 637133472000000000, 36000000000, T(72000000000, 11, 1, DayOfWeek.Sunday), T(108000000000, 1, 2, DayOfWeek.Sunday), 0),
-                    R(637134336000000000, 3155378112000000000, 36000000000, T(72000000000, 11, 1, DayOfWeek.Sunday), T(108000000000, 1, 3, DayOfWeek.Sunday), 0),
+                    R(636818976000000000, 637133472000000000, 36000000000, T(72000000000, 11, 2, DayOfWeek.Sunday), T(108000000000, 1, 2, DayOfWeek.Sunday), 0),
+                    R(637134336000000000, 3155378112000000000, 36000000000, T(72000000000, 11, 2, DayOfWeek.Sunday), T(108000000000, 1, 2, DayOfWeek.Sunday), 0),
                 }),
                 TZ("Kamchatka Standard Time", 432000000000, "(UTC+12:00) Petropavlovsk-Kamchatsky - Old", "Kamchatka Standard Time", "Kamchatka Daylight Time", new AdjustmentRule[] {
                     R(0, 3155378112000000000, 36000000000, T(72000000000, 3, 5, DayOfWeek.Sunday), T(108000000000, 10, 5, DayOfWeek.Sunday), 0),
