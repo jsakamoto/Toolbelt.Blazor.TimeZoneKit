@@ -10,7 +10,7 @@ This package provides system time zones set, and local time zone initialization,
 
 ### Note
 
-At this time, the latest version of the client-side Blazor WebAssembly app is v.3.1 Preview 2, it doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the latest version of the client-side Blazor WebAssembly app is v.3.1 Preview 3, it doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
