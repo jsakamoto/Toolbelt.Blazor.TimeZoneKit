@@ -48,7 +48,7 @@ v.1.0.0
     <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.2.0-preview1.20073.1" />
   </ItemGroup>
 
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition=" '$(Configuration)' == 'Debug' ">
     <Exec Command="dotnet build $(ProjectDir)../Toolbelt.Blazor.TimeZoneKit.GenerateSourceCode/Toolbelt.Blazor.TimeZoneKit.GenerateSourceCode.csproj -c $(Configuration) -f netcoreapp3.1" />
     <Exec Command="pushd &quot;$(ProjectDir)../Toolbelt.Blazor.TimeZoneKit.GenerateSourceCode/bin/$(Configuration)/netcoreapp3.1&quot;&#xD;&#xA;dotnet exec Toolbelt.Blazor.TimeZoneKit.GenerateSourceCode.dll -b &quot;$(ProjectDir)&quot;&#xD;&#xA;popd" />
   </Target>
