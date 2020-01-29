@@ -10,7 +10,7 @@ This package provides system time zones set, and local time zone initialization,
 
 ### Note
 
-At this time, the latest version of the client-side Blazor WebAssembly app is v.3.1 Preview 3, it doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the latest version of the client-side Blazor WebAssembly app is v.3.2 Preview 1, it doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
@@ -20,7 +20,7 @@ See also:
 
 ## Supported Blazor versions
 
-"Blazor WebAssembly App (client-side) Time Zone Kit" ver.5.x supports  Blazor WebAssembly App versions **from ver.3.0 Preview 4 to ver.3.1 Preview 2.**
+"Blazor WebAssembly App (client-side) Time Zone Kit" ver.6.x supports  Blazor WebAssembly App versions **3.2 Preview 1.**
 
 ## How to install and use it?
 
@@ -30,19 +30,24 @@ See also:
 > dotnet add package Toolbelt.Blazor.TimeZoneKit
 ```
 
-**Step.2** - call `UseLocalTimeZone()` extension method  in `Configure()` method of startup class.
+**Step.2** - Add calling `UseLocalTimeZone()` extension method in `Main()` method in your "Program.cs".
 
 ```csharp
 ...
-using Toolbelt.Blazor.Extensions.DependencyInjection;
+using Toolbelt.Blazor.Extensions.DependencyInjection; // <!-- Add this line, and..
 
-public class Startup
+public class Program
 {
-    ...
-    public void Configure(IComponentsApplicationBuilder app)
+    public static async Task Main(string[] args)
     {
-        app.UseLocalTimeZone();
-    ...
+        var builder = WebAssemblyHostBuilder.CreateDefault(args);
+        builder.RootComponents.Add<App>("app");
+
+        await builder
+            .Build()
+            .UseLocalTimeZone() // <!-- Add this!
+            .RunAsync();
+        ...
 ```
 
 That's all!
@@ -68,6 +73,11 @@ And, this library also contains mapping information for converting IANA time zon
 
 ## Release Note
 
+- **v.6.0.0**
+  - BREAKING CHANGE: Support Blazor v.3.2.0 Preview 1 (not compatible with v.3.1.0 Preview 4 or before.)
+  - Update time zone information
+    - Morocco Standard Time
+    - Fiji Standard Time
 - **v.5.0.2**
     - Update Central Brazilian Standard Time
     - Update E. South America Standard Time

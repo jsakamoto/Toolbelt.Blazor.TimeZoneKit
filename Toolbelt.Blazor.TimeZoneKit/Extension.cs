@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.AspNetCore.Components.Builder;
+using Microsoft.AspNetCore.Blazor.Hosting;
 using Microsoft.JSInterop;
 
 namespace Toolbelt.Blazor.Extensions.DependencyInjection
@@ -12,44 +12,48 @@ namespace Toolbelt.Blazor.Extensions.DependencyInjection
         /// <summary>
         /// Set "TimeZoneInfo.Local" to actual local time zone. (include "UseSystemTimeZones()")
         /// </summary>
-        public static void UseLocalTimeZone(this IComponentsApplicationBuilder app)
+        public static WebAssemblyHost UseLocalTimeZone(this WebAssemblyHost host)
         {
-            app.UseSystemTimeZones();
-            var jsRuntime = app.Services.GetService(typeof(IJSRuntime)) as IJSInProcessRuntime;
+            host.UseSystemTimeZones();
+            var jsRuntime = host.Services.GetService(typeof(IJSRuntime)) as IJSInProcessRuntime;
             if (jsRuntime != null)
             {
                 var ianaTimeZoneName = jsRuntime.Invoke<string>("eval", "(function(){try { return ''+ Intl.DateTimeFormat().resolvedOptions().timeZone; } catch(e) {} return 'UTC';}())");
                 TimeZoneKit.TimeZoneKit.SetLocalTimeZoneByIANAName(ianaTimeZoneName);
             }
+            return host;
         }
 
         /// <summary>
         /// Set "TimeZoneInfo.Local" to the time zone that specified id. (include "UseSystemTimeZones()")
         /// </summary>
-        public static void UseLocalTimeZone(this IComponentsApplicationBuilder app, string timeZoneId)
+        public static WebAssemblyHost UseLocalTimeZone(this WebAssemblyHost host, string timeZoneId)
         {
-            app.UseSystemTimeZones();
+            host.UseSystemTimeZones();
             TimeZoneKit.TimeZoneKit.SetLocalTimeZone(timeZoneId);
+            return host;
         }
 
         /// <summary>
         /// Set "TimeZoneInfo.Local" to the time zone that specified IANA name. (include "UseSystemTimeZones()")
         /// </summary>
-        public static void UseLocalTimeZoneByIANAName(this IComponentsApplicationBuilder app, string ianaTimeZoneName)
+        public static WebAssemblyHost UseLocalTimeZoneByIANAName(this WebAssemblyHost host, string ianaTimeZoneName)
         {
-            app.UseSystemTimeZones();
+            host.UseSystemTimeZones();
             TimeZoneKit.TimeZoneKit.SetLocalTimeZoneByIANAName(ianaTimeZoneName);
+            return host;
         }
 
         /// <summary>
         /// Ensure "TimeZoneInfo.GetSystemTimeZones()"
         /// </summary>
-        public static void UseSystemTimeZones(this IComponentsApplicationBuilder app)
+        public static WebAssemblyHost UseSystemTimeZones(this WebAssemblyHost host)
         {
             if (TimeZoneInfo.GetSystemTimeZones().Count == 0)
             {
                 TimeZoneKit.TimeZoneKit.SetSystemTimeZones(TimeZoneKit.TimeZoneKit.CreateSystemTimeZones());
             }
+            return host;
         }
     }
 }

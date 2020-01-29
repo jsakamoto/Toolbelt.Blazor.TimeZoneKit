@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <RestoreAdditionalProjectSources>
       https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json;
       https://dotnet.myget.org/F/blazor-dev/api/v3/index.json;
@@ -11,7 +11,12 @@
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Toolbelt.Blazor.TimeZoneKit.xml</DocumentationFile>
     <Authors>J.Sakamoto</Authors>
-    <PackageReleaseNotes>v.5.0.3
+    <PackageReleaseNotes>v.6.0.0
+- BREAKING CHANGE: Support Blazor v.3.2.0 Preview 1 (not compatible with v.3.1.0 Preview 4 or before.)
+- Update time zone information
+    - Morocco Standard Time
+    - Fiji Standard Time
+v.5.0.3
 - Update Morocco, Norfolk, Fiji Standard Time
 v.5.0.2
 - Update Central Brazilian Standard Time
@@ -35,17 +40,17 @@ v.2.0.0
 v.1.0.0
 - 1st release.</PackageReleaseNotes>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
-    <Copyright>Copyright © 2018-2019 J.Sakamoto, Mozilla Public License 2.0</Copyright>
+    <Copyright>Copyright © 2018-2020 J.Sakamoto, Mozilla Public License 2.0</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Blazor.TimeZoneKit/</PackageProjectUrl>
     <Description>This package provides system time zones set, and local time zone initialization, for Blazor (client-side) browser application.</Description>
     <PackageTags>blazor,timezone,timezoneinfo</PackageTags>
-    <Version>5.0.3</Version>
+    <Version>6.0.0</Version>
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.0.0-preview4-19216-03" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.2.0-preview1.20073.1" />
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
