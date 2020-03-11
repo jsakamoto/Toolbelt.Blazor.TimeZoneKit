@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.AspNetCore.Blazor.Hosting;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.JSInterop;
 
 namespace Toolbelt.Blazor.Extensions.DependencyInjection

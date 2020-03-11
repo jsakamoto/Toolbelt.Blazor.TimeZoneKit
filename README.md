@@ -10,7 +10,7 @@ This package provides system time zones set, and local time zone initialization,
 
 ### Note
 
-At this time, the latest version of the client-side Blazor WebAssembly app is v.3.2 Preview 1, it doesn't contain any time zone info, and local time zone is always UTC wherever.
+At this time, the latest version of the client-side Blazor WebAssembly app is v.3.2 Preview 2, it doesn't contain any time zone info, and local time zone is always UTC wherever.
 
 See also: 
 
@@ -20,7 +20,7 @@ See also:
 
 ## Supported Blazor versions
 
-"Blazor WebAssembly App (client-side) Time Zone Kit" ver.6.x supports  Blazor WebAssembly App versions **3.2 Preview 1.**
+"Blazor WebAssembly App (client-side) Time Zone Kit" ver.7.x supports  Blazor WebAssembly App versions **3.2 Preview 2.**
 
 ## How to install and use it?
 
@@ -42,7 +42,7 @@ public class Program
     {
         var builder = WebAssemblyHostBuilder.CreateDefault(args);
         builder.RootComponents.Add<App>("app");
-
+        ...
         await builder
             .Build()
             .UseLocalTimeZone() // <!-- Add this!
@@ -73,6 +73,8 @@ And, this library also contains mapping information for converting IANA time zon
 
 ## Release Note
 
+- **v.7.0.0**
+  - BREAKING CHANGE: Support Blazor v.3.2.0 Preview 2 (not compatible with v.3.2.0 Preview 1 or before.)
 - **v.6.0.0**
   - BREAKING CHANGE: Support Blazor v.3.2.0 Preview 1 (not compatible with v.3.1.0 Preview 4 or before.)
   - Update time zone information

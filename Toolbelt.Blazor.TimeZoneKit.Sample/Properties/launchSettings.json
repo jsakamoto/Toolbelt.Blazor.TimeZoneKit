@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:55638/",
-      "sslPort": 0
+      "applicationUrl": "http://localhost:57524/",
+      "sslPort": 44382
     }
   },
   "profiles": {
@@ -18,10 +18,10 @@
     "Toolbelt.Blazor.TimeZoneKit.Sample": {
       "commandName": "Project",
       "launchBrowser": true,
+      "applicationUrl": "http://localhost:57528/;https://localhost:57529/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:55639/"
+      }
     }
   }
 }
